@@ -4,10 +4,6 @@ li, ol{
 	list-style: none;
 }
 
-a{
-	color: #0d80bc;
-}
-
 a:hover{
 	color: #0e547a;
 	text-decoration: none;

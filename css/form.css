@@ -25,15 +25,21 @@ header .col-sm-10{
 
 /* Background*/
 
+html, body {
+	height: 100%;
+} 
+
+
+
 .form-bkg{
 	background-color: rgba(153,153,153,0.1);
+	min-height: 100%;
 }
 
 /* Progress indicator*/
 
 .progress-indicator{
 	overflow: hidden;
-	margin-top: 20px;
 	margin: 20px;
 }
 
@@ -68,11 +74,6 @@ header .col-sm-10{
 	padding: 2px 0% 0% 40px;
 }
 
-.progress-txt .glyphicon{
-
-
-}
-
 .disabled .progress-circle{
 	background-color: #c3c3c3;
 }
@@ -80,7 +81,6 @@ header .col-sm-10{
 .disabled .progress-txt{
 	color: #c3c3c3;
 }
-
 
 
 /* Form field - general styles*/
@@ -254,25 +254,10 @@ select{
 }
 
 
-
-
 /* Footer*/
 
 .footer-secondary{
 	padding: 3% 0%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
