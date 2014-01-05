@@ -4,34 +4,29 @@ header{
 	padding: 1% 0%;
 }
 
-
 .logo-primary{
 	width: 70%;
 }
 
-.nav{
-	overflow: hidden;
-}
-
 .nav-primary{
 	margin-top: 4%;
+	width: 100%;
 	overflow: hidden;
 }
 
 .nav-primary ul{
-	width: 82%;
-	float: right;
+	width: 80%;
 	overflow: hidden;
-	text-transform: uppercase;
 }
 
 .nav-primary li{
-	margin-right: 8%; 
+	text-transform: uppercase;
+	margin-right: 4%; 
 	float: left;
 }
 
 .nav-primary li:last-child{
-	margin-right: 0%; 
+	margin-right: 0; 
 }
 
 .nav-primary a{
@@ -42,36 +37,33 @@ header{
 	color: #0d80bc;
 }
 
-.cart-dynamic{
-	background: url('../assets/cart-empty.svg') no-repeat;
-	background-size: 90% 90%;
-	background-position: -30px 2px;
-	padding:0% 0% 8% 15%;
-}
+
+
 
 
 /* Search bars - primary & secondary*/															/*bright blue color: #3db0e6*/
 .search-bar{
 	border: solid 1px rgba(153,153,153,0.5);
 	background-color: rgba(233,233,233,0.68);
-	position: relative;
 }
 
-.form-group{													/*maybe re-organise this???!!*/
+.search-bar .form-group{												
 	width: 100%;
+	position: relative;
 }
 
 .search-bar input{
 	height: 40px;
 	width: 85%;
-	padding-left: 4%;
-	margin: 1% 0%;
+	padding-left: 40px;
+	margin: 10px 0px;
 }
 
 .search-bar .glyphicon-search{
 	position: absolute;
 	color: #999;
-	padding: 2%;
+	left: 20px;
+	top: 23px;
 }
 
 .search-bar .btn{
@@ -185,12 +177,21 @@ table{
 	box-shadow: 3px 3px 3px rgba(153,153,153,0.1);
 	background-color: rgba(233,233,233,0.68);
 	border: solid 1px rgba(229,229,229,0.8);
+}
+
+.subscription .form-group{
+	width: 100%;
 	position: relative;
 }
 
+.subscription .form-group .col-sm-3{
+	padding-top: 10px;
+}
+
+
 .subscription p{
 	text-transform: uppercase;
-	margin-top: 4%;
+	line-height: 1.1em;
 }
 
 .subscription .blue-txt{
@@ -202,15 +203,15 @@ table{
 .subscription input{
 	height: 40px;
 	width: 83%;
-	padding-left: 5%;
-	margin: 1% 0%;
+	padding-left: 35px;
+	margin: 10px 0;
 }
 
 .subscription .glyphicon-user{
 	position: absolute;
 	color: #999;
-	padding-left: 2%;
-	padding-top: 2.5%;
+	left: 30px;
+	top: 22px;
 }
 
 .subscription .btn{
@@ -267,11 +268,11 @@ table{
 	color: #666;
 }
 
-.jobs-module .col-sm-8{
+.jobs-module .col-sm-7{
 	padding: 0;
 }
 
-.jobs-module .col-sm-4{
+.jobs-module .col-sm-5{
 	padding: 0;
 	height: 100%;
 }
@@ -283,8 +284,6 @@ table{
 }
 
 /* Jobs module-aside*/
-
-
 
 .aside{
 	border-radius: 0px;
@@ -318,15 +317,34 @@ table{
 
 /* Job cart button*/
 
-.jobcart-btn{
+
+
+.jobcart-btn span{
 	display: block;
-	position: relative;
-	width: 100%;
-	height: 40px;
+	float: left;
+	margin-left: 5px;
+}
+
+.jobcart-active{ 
+	display: block;
+	background: url('../assets/sprites2.png') top left no-repeat;
+	width:31px; 
+	height:20px; 
+	background-position:-10px -40px;
+}
+
+.jobcart-empty{ width:30px; height:20px; background-position:-10px -10px; }
+
+
+
+.jobcart-btn{
+	overflow: hidden;
+	width: 165px;
+	height: 45px;
 	border-radius: 3px;
 	border: solid 1px #3db0e6;
 	background-color: #fff;
-	font-size: 1.1em;
+	font-size: 1em;
 	color: #666;
 }
 
@@ -340,18 +358,6 @@ table{
 		    transition: all 0.5s ease;
 }
 
-.jobcart-active{
-	width: 30px;
-	height: 25px;
-	position: absolute;
-	right: 10px;
-	top: 8px;
-	background: url('../assets/cart.svg') no-repeat;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-}
 
 
 
@@ -429,21 +435,33 @@ table{
 /* Join talent community section*/
 
 .base-subscription{
+	height: 150px;
 	background-color: #333;
-	padding: 4% 0%;
 }
 
 .base-subscription a{
 	font-family: 'Trykker', serif;
 	display: block;
-	color: #3db0e6;
-	font-size: 1.5em;
+	width: inherit;
+	height: inherit;
+	color: #0ba8f1;
+	font-size: 1.6em;
 }
 
 .base-subscription a:hover{
-	background-color: #3db0e6;
+	background-color: #0ba8f1;
 	color: #fff;
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+		 -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
 }
+
+.base-subscription p{
+	display: block;
+	margin: 60px auto;
+}
+
 
 
 /* Footer*/

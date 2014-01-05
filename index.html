@@ -31,34 +31,35 @@
 							<img class="img-resonsive logo-primary" src="assets/logo.jpg">
 						</a>
 					</div>
-					<div class="col-sm-10 nav">
+					<div class="col-sm-10">
 						<nav class="nav-primary">
-							<ul>
-								<li>
-									<a href="/">Home</a>
-								</li>
-								<li>
-									<a href="">Jobs</a>
-								</li>
-								<li>
-									<a href="">For Employers</a>
-								</li>
-								<li>
-									<a href="">About RGF</a>
-								</li>
-								<li>
-									<a href="">Contact Us</a>
-								</li>
-								<li>
-									<a href="4-jobcart.html">
-										<div class="cart-dynamic">
+							<div class="test">
+								<ul>
+									<li>
+										<a href="/">Home</a>
+									</li>
+									<li>
+										<a href="">Jobs</a>
+									</li>
+									<li>
+										<a href="">For Employers</a>
+									</li>
+									<li>
+										<a href="">About RGF</a>
+									</li>
+									<li>
+										<a href="">Contact Us</a>
+									</li>
+									<li>
+										<a href="4-jobcart.html">										<!--add in and fix job cart bug here-->
+											<span class="cart-dynamic"></span>
 											<span class="jobcart-count">5</span>
 											<span class="">Job Cart</span>
 											<span class="caret"></span>
-										</div>
-									</a>
-								</li>
-							</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 				</div>
@@ -98,7 +99,7 @@
 						<form class="form-inline" role="form">
 							<div class="form-group">
 								<div class="col-sm-3">
-									<p class="blue-txt">Get scouted by professionals</p>
+									<p class="blue-txt">Get scouted by recruiters</p>
 									<p>Join our talent community</p>
 								</div>
 								<div class="col-sm-9">
@@ -122,15 +123,28 @@
 								<h3><a href="">New Jobs</a></h3>
 							</div>					
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-sm-7">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
-									<p class="job-salary">S$3,000 - 5,000</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-5">
 									<button class="btn jobcart-btn">
-										<p>Add to Job cart</p>
+										<span class="jobcart-desp">Add to Job cart</span>
 										<span class="jobcart-active"></span>
+									</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-7">
+									<h4><a class="" href="">Front-end Developer</a></h4>
+									<p class="job-location">Singapore</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
+								</div>
+								<div class="col-sm-5">
+									<button class="btn jobcart-btn">
+										<span class="jobcart-desp">Add to Job cart</span>
+										<span class="cart-active"></span>
 									</button>
 								</div>
 							</div>
@@ -138,7 +152,7 @@
 								<div class="col-sm-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
-									<p class="job-salary">S$3,000 - 5,000</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
 								<div class="col-sm-4">
 									<button class="btn jobcart-btn">Add to Job cart</button>
@@ -148,30 +162,20 @@
 								<div class="col-sm-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
-									<p class="job-salary">S$3,000 - 5,000</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
 								<div class="col-sm-4">
-									<button class="btn jobcart-btn">Add to Job cart <span class="job-cart"></span></button>
+									<button class="btn jobcart-btn">Add to Job cart</button>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
-									<p class="job-salary">S$3,000 - 5,000</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
 								<div class="col-sm-4">
-									<button class="btn jobcart-btn">Add to Job cart <span class="glyphicon glyphicon-shopping-cart"></span></button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-8">
-									<h4><a class="" href="">Front-end Developer</a></h4>
-									<p class="job-location">Singapore</p>
-									<p class="job-salary">S$3,000 - 5,000</p>
-								</div>
-								<div class="col-sm-4">
-									<button class="btn jobcart-btn">Add to Job cart <span class="glyphicon glyphicon-shopping-cart"></span></button>
+									<button class="btn jobcart-btn">Add to Job cart</button>
 								</div>
 							</div>
 							<div class="row">
@@ -396,13 +400,15 @@
 		</section>
 	<!--Join talent comm. section-->
 		<section class="base-subscription">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<a href="">Ready to take your next career with us? Join our talent community ></a>
+			<a href="">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>Ready to take your next career to greater heights? Join our talent community</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</section>	
 	<!--Footer-->
 		<footer class="footer-primary">
