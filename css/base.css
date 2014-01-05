@@ -1,0 +1,19 @@
+/* Base Styles*/
+
+li, ol{
+	list-style: none;
+}
+
+a{
+	color: #0d80bc;
+}
+
+a:hover{
+	color: #0e547a;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, button, label, table, span{
+	font-family: 'Open Sans', sans-serif; 
+}
+
